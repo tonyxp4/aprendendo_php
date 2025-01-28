@@ -36,7 +36,7 @@
             <a href="soma.php"><h2>lição9 (funções)</h2></a>
         </li>
         <li>
-            <a href="soma.php"><h2>lição10 (session)</h2></a>
+            <a href="login.php"><h2>lição10 (session)</h2></a>
         </li>
     </ul>
 </body>
