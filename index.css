@@ -1,0 +1,33 @@
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    color: azure;
+    border-radius: 3px;
+    text-align: center;
+}
+.fimdesemana
+{
+    background-image: url(ftos/fimdesemana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.semanas
+{
+    background-image: url(ftos/light-background-with-sunset-projector-lamp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+h2
+{
+    color: white;
+}
+.caixa
+{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    margin-left: 300px;
+    border-radius: 15px;
+}
