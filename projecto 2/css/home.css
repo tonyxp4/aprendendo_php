@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.primeirafto {
+  background: url("../fto/Premium Photo _ Confident young man with his hand in pocket against black background.jpeg") no-repeat;
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-attachment: fixed; /* Imagem fixa ao rolar a página (desabilita para mobile) */
+  height: 400px; /* Defina uma altura para o cabeçalho */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  color: white; /* Cor do texto dentro do cabeçalho */
+  text-align: center; /* Alinha o texto no centro */
+  border-radius: 10px 10px 0 0; /* Bordas arredondadas apenas na parte superior */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Garantir que o conteúdo do cabeçalho fique acima de outros elementos */
+}
+.segundafto
+{
+  background: url(../fto/448d9880-e757-4ede-967c-8b4288551235.jpeg)no-repeat;
+  background-size: cover; /* Faz a imagem cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-attachment: fixed; /* Imagem fixa ao rolar a página (desabilita para mobile) */
+  height: 400px; /* Defina uma altura para o cabeçalho */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  color: white; /* Cor do texto dentro do cabeçalho */
+  text-align: center; /* Alinha o texto no centro */
+  border-radius: 10px 10px 0 0; /* Bordas arredondadas apenas na parte superior */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Garantir que o conteúdo do cabeçalho fique acima de outros elementos */
+}
+
+header h1 {
+  font-size: 48px; /* Tamanho do título */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+
+/* Responsividade - Ajustes para telas menores */
+@media (max-width: 767px) {
+  header {
+    background-attachment: scroll; /* Desabilita a fixação da imagem para dispositivos móveis */
+    height: 300px; /* Ajuste a altura para telas menores */
+  }
+
+  header h1 {
+    font-size: 32px; /* Ajusta o tamanho do título em dispositivos móveis */
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 250px; /* Altura ainda menor para telas muito pequenas */
+  }
+
+  header h1 {
+    font-size: 24px; /* Ajuste ainda mais no título */
+  }
+}
+
+body{
+  background-color: #53ffe8;
+  background: linear-gradient(to right, #2e6adb, #537f8a);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.ftoperfil
+{
+ width: 40px;
+ position: relative;
+ padding: 20;
+ margin-right: 6px;
+ margin-bottom: 15px;
+ border-radius: 3px;
+}
