@@ -44,9 +44,7 @@ switch ($hora)
         <h3>O ladrão está escondido em uma das caixas da loja, correspondente a um número de 0 a 100.</h3>
         <input type="number" name="numero" placeholder="Digite a quantidade">
         <input type="submit" name="submit">
-    </form>
-
-    <?php
+        <?php
     //verificar se ja tem sessão
     if (!isset($_SESSION['numero_aleatorio']))
     {
@@ -57,17 +55,17 @@ switch ($hora)
         $r = $_SESSION['numero_aleatorio'];
         //se o valor do usuario for o mesmo que o rand
         if ($num == $r) {
-            echo "Parabéns, você achou o ladrão que estava na caixa número " . $r . " da loja!";
+            echo "<b>Parabéns, você achou o ladrão que estava na caixa número " . $r . " da loja! </b>";
             session_destroy();
         }
         //se o valor do usuario for menor que o rand
         else if ($num < $r) {
-            echo "Não esta aqui na caixa numero ". $num."! Vai mais para cima!<br>";
+            echo "<b><h4>Não esta aqui na caixa numero ". $num."! Vai mais para cima!</h4></b>";
         }
         //se o valor do usuario for maior que o rand
         else if ($num > $r)
         {
-            echo "Não esta aqui na caixa numero ". $num."! Vai mais para baixo!<br>";
+            echo "<b><h4>Não esta aqui na caixa numero ". $num."! Vai mais para baixo!</h4></b>";
         }
     }
     ?>

@@ -39,14 +39,13 @@ switch ($hora)
 }
 ?>
 <div class="container">
-    <h2 class="h2soma">Calculadora de Soma</h2>
+ 
     <form class="formsoma" method="POST">
+           <h2 class="h2soma">Calculadora de Soma</h2>
         <input type="number" name="num1" placeholder="Digite o primeiro número" required>
         <input type="number" name="num2" placeholder="Digite o segundo número" required>
         <input type="submit" value="Somar">
-    </form>
-
-    <?php
+        <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Pegando os valores dos inputs
         $num1 = $_POST['num1'];
@@ -62,12 +61,14 @@ switch ($hora)
         $resultado = soma($num1, $num2);
 
         // Exibindo o resultado
+    
         echo "<div class='result'>";
         echo "Resultado: $num1 + $num2 = $resultado";
         echo "</div>";
     }
     ?>
-    <a href="index.php"><h2>sair</h2></a>
+        <a href="index.php"><h2>sair</h2></a>
+    </form>
 </div>
 </body>
 </html>

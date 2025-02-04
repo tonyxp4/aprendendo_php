@@ -48,8 +48,7 @@ switch ($hora)
         <h3>digite o nome dos membros do seu grupo e coloca <b>","</b> no final de cada nome</h3>
         <input type="text" name="grupo" placeholder="Digite os membros do grupo">
         <input type="submit" name="submit">
-    </form>
- <?php
+        <?php
     if(isset($_POST["submit"]) && isset($_POST["grupo"]) && isset($_POST["numero"]))
     {
         $quantidade = $_POST["numero"];
@@ -65,6 +64,9 @@ switch ($hora)
         echo "</ul>";
     }
 ?>
-    <a href="index.php"><h2>sair</h2></a>
+        <a href="index.php"><h2>sair</h2></a>
+    </form>
+ 
+    
 </body>
 </html>

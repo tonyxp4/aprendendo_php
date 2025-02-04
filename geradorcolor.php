@@ -26,8 +26,8 @@
         <h1>Gerador de cores</h1>
         <input type="number" name="numero" placeholder= "digite a quantidade de cor">
         <input type="submit" name="submit">
-    </form>
-    <?php
+        <?php  echo " <h2 foi gerada ".$numDivs . "color"?>
+        <?php
 if (isset($_POST['submit'])) {
     $numDivs = intval($_POST['numero']);
     if($numDivs == 0)
@@ -53,6 +53,7 @@ if (isset($_POST['submit'])) {
 }
 }
 ?>
-<a href="index.php"><h2>sair</h2></a>
+        <a href="index.php"><h2>sair</h2></a>
+    </form>
 </body>
 </html>
